@@ -3,7 +3,6 @@ package guru.qa;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import guru.qa.domain.Owner;
-import guru.qa.domain.SpringBDManager;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -24,6 +23,7 @@ public class TestEx1 {
 			.last_name("spring")
 			.build();
 		idOwner = manager.createOwner(owner);
+		System.out.println("================  " + idOwner);
 	}
 
 	@AfterEach

@@ -8,7 +8,8 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.$;
 
 public class TestAdd {
-	IBDManager manager = new BDManager();
+	//IBDManager manager = new BDManager();
+	IBDManager manager = new SpringBDManager();
 	@Test
 	void checkAddOwner() {
 		Selenide.open("http://localhost:8080/owners/find");
